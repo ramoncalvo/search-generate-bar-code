@@ -17,7 +17,7 @@ const ReadData = () => {
 		};
 		fetchData();
         isCargando(false)
-		console.log('guia', guia);
+		
 	}, []);
 
 	class ComponentToPrint extends React.Component {
@@ -45,8 +45,9 @@ const ReadData = () => {
 				setResultado(true);
 				setVarCodigo(d.product);
 				generaCodigo(d.product);
-				return console.log('se ha encontrado coincidencia');
+				console.log('se ha encontrado coincidencia');
 			}
+			return true
 		});
 	}
 
